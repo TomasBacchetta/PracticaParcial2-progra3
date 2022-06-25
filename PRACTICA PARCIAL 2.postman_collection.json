@@ -1,0 +1,288 @@
+{
+	"info": {
+		"_postman_id": "4e43b90c-62fd-465d-8321-c1fe9d1b4ca7",
+		"name": "PRACTICA PARCIAL 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Usuarios",
+			"item": [
+				{
+					"name": "Crear usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mail",
+									"value": "faron@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "tipo",
+									"value": "admin",
+									"type": "default"
+								},
+								{
+									"key": "clave",
+									"value": "1234",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:777/usuarios",
+							"host": [
+								"localhost"
+							],
+							"port": "777",
+							"path": [
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar usuarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:777/usuarios",
+							"host": [
+								"localhost"
+							],
+							"port": "777",
+							"path": [
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Traer un usuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:777/usuarios/1",
+							"host": [
+								"localhost"
+							],
+							"port": "777",
+							"path": [
+								"usuarios",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mail",
+									"value": "faron1@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "tipo",
+									"value": "cliente",
+									"type": "default"
+								},
+								{
+									"key": "clave",
+									"value": "4321",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:777/usuarios/1",
+							"host": [
+								"localhost"
+							],
+							"port": "777",
+							"path": [
+								"usuarios",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar usuario",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:777/usuarios/1",
+							"host": [
+								"localhost"
+							],
+							"port": "777",
+							"path": [
+								"usuarios",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Traer usuarios por cripto",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CriptoMonedas",
+			"item": [
+				{
+					"name": "Crear cripto",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Listar criptos",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Traer una cripto",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar cripto",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar cripto",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Listar criptos por pais",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login usuarios",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ventas",
+			"item": [
+				{
+					"name": "Cargar venta",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Listar ventas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:777/ventas/json",
+							"host": [
+								"localhost"
+							],
+							"port": "777",
+							"path": [
+								"ventas",
+								"json"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista ventas en PDF",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:777/ventas/pdf",
+							"host": [
+								"localhost"
+							],
+							"port": "777",
+							"path": [
+								"ventas",
+								"pdf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar ventas por nacionalidad entre dos fechas",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Test",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
